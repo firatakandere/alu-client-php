@@ -1,5 +1,5 @@
 {
-    "name": "payu/alu-client",
+    "name": "firatakandere/alu-client",
     "description": "Automatic Live Update Client",
     "license": "Apache2",
     "keywords": ["alu", "payu", "automatic live update", "payment"],
