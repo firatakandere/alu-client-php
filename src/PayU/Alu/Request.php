@@ -127,6 +127,11 @@ class Request
         $this->internalArray['CARD_PROGRAM_NAME'] = $this->order->getCardProgramName();
 
         if (is_null($this->card) && !is_null($this->cardToken)) {
+            $this->internalArray['CC_NUMBER'] = '';
+            $this->internalArray['EXP_MONTH'] = '';
+            $this->internalArray['EXP_YEAR'] = '';
+            $this->internalArray['CC_CVV'] = '';
+            $this->internalArray['CC_OWNER'] = '';
             $this->internalArray['CC_TOKEN'] = $this->cardToken->getToken();
             if ($this->cardToken->hasCvv()) {
                 $this->internalArray['CC_CVV'] = $this->cardToken->getCvv();
